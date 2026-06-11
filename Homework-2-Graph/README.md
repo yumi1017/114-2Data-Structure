@@ -321,7 +321,7 @@ int main()
 }
 ```
 ```text
-BFS result: 0 1 2 3 4 5 =thread-exited,id="4",group-id="i1"
+BFS result: 0 1 2 3 4 5
 ```
 
 ### 空間複雜度
