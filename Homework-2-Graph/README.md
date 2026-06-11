@@ -34,24 +34,21 @@ public:
 
 - showMatrix()
 ```cpp
-    void showMatrix(){
-        vector<int>::iterator it;
-        for(int k=0;k<n;k++){
-            cout<<k<<" ";
+    void showMatrix() {
+        for (int k = 0; k < n; k++) {
+            cout << k << " ";
         }
-        cout<<endl;
-        for(int i=0;i<n;++i){
-            it=adj[i].begin();
-            for(int j=0;j<n;j++){
-                if(*it==){
-                    cout<<"1 ";
-                    ++it;
+        cout << endl;
+        for (int i = 0; i < n - 1; ++i) {
+            for (int j = 0; j < n; j++) {
+                if (find(adj[i].begin(), adj[i].end(), j) != adj[i].end()) {
+                    cout << "1 ";
                 }
-                else{
-                    cout<<"0 ";
+                else {
+                    cout << "0 ";
                 }
             }
-            cout<<endl;
+            cout << endl;
         }
     }
 ```
