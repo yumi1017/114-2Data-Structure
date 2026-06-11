@@ -325,7 +325,7 @@ BST 儲存 n 個節點 -> O(n)
 儲存隨機產生的不重複整數，並計算不同 n 值下 BST 的高度
 
 ```cpp
-//MinHeap.cpp
+// Binary Search Tree.cpp
 #include <iostream>
 #include <vector>
 #include <cmath>
