@@ -11,7 +11,7 @@
 using namespace std;
 
 // =====================================================
-// ´ú¸Õµ²ªGµ²ºc
+// æ¸¬è©¦çµæœçµæ§‹
 // =====================================================
 struct TestResult
 {
@@ -24,7 +24,7 @@ struct TestResult
 };
 
 // =====================================================
-// ¨ú±o¥Ø«eµ{¦¡°O¾ĞÅé¨Ï¥Î¶q¡A³æ¦ì KB
+// å–å¾—ç›®å‰ç¨‹å¼è¨˜æ†¶é«”ä½¿ç”¨é‡ï¼Œå–®ä½ KB
 // =====================================================
 size_t getMemoryKB()
 {
@@ -40,7 +40,7 @@ size_t getMemoryKB()
 }
 
 // =====================================================
-// ÀË¬d±Æ§Ç¬O§_¦¨¥\
+// æª¢æŸ¥æ’åºæ˜¯å¦æˆåŠŸ
 // =====================================================
 bool isSorted(const vector<int>& data)
 {
@@ -73,7 +73,7 @@ void insertionSort(vector<int>& data)
 }
 
 // =====================================================
-// Quick Sort¡Gmedian-of-three
+// Quick Sortï¼šmedian-of-three
 // =====================================================
 int medianOfThree(vector<int>& data, int left, int right)
 {
@@ -228,7 +228,7 @@ void heapSort(vector<int>& data)
 
 // =====================================================
 // Composite Sort
-// ¤p¸ê®Æ¥Î Insertion Sort¡A¤j¸ê®Æ¥Î Quick Sort
+// å°è³‡æ–™ç”¨ Insertion Sortï¼Œå¤§è³‡æ–™ç”¨ Quick Sort
 // =====================================================
 void compositeSortRecursive(vector<int>& data, int left, int right)
 {
@@ -286,7 +286,7 @@ void compositeSort(vector<int>& data)
 }
 
 // =====================================================
-// ´ú¸Õ±Æ§Ç¡G¦^¶Ç´ú¸Õµ²ªG¡A¤£ª½±µ¿é¥X
+// æ¸¬è©¦æ’åºï¼šå›å‚³æ¸¬è©¦çµæœï¼Œä¸ç›´æ¥è¼¸å‡º
 // =====================================================
 template <class SortFunction>
 TestResult testSort(
@@ -311,7 +311,7 @@ TestResult testSort(
 
     if (!isSorted(data))
     {
-        cout << sortName << " ¦b " << caseName << " ±Æ§Ç¥¢±Ñ¡I" << endl;
+        cout << sortName << " åœ¨ " << caseName << " æ’åºå¤±æ•—ï¼" << endl;
     }
 
     TestResult result;
@@ -326,7 +326,7 @@ TestResult testSort(
 }
 
 // =====================================================
-// ¿é¥Xªí®æ
+// è¼¸å‡ºè¡¨æ ¼
 // =====================================================
 void printTable(const vector<TestResult>& results)
 {
@@ -357,7 +357,7 @@ void printTable(const vector<TestResult>& results)
 }
 
 // =====================================================
-// ²£¥Í Best Case¡G¥Ñ¤p¨ì¤j
+// ç”¢ç”Ÿ Best Caseï¼šç”±å°åˆ°å¤§
 // =====================================================
 vector<int> generateBestData(int n)
 {
@@ -370,7 +370,7 @@ vector<int> generateBestData(int n)
 }
 
 // =====================================================
-// ²£¥Í Average Case¡G¶Ã¼Æ
+// ç”¢ç”Ÿ Average Caseï¼šäº‚æ•¸
 // =====================================================
 vector<int> generateAverageData(int n)
 {
@@ -383,7 +383,7 @@ vector<int> generateAverageData(int n)
 }
 
 // =====================================================
-// ²£¥Í Worst Case¡G¥Ñ¤j¨ì¤p
+// ç”¢ç”Ÿ Worst Caseï¼šç”±å¤§åˆ°å°
 // =====================================================
 vector<int> generateWorstData(int n)
 {
@@ -396,7 +396,7 @@ vector<int> generateWorstData(int n)
 }
 
 // =====================================================
-// main ¥Dµ{¦¡
+// main ä¸»ç¨‹å¼
 // =====================================================
 int main()
 {
@@ -404,7 +404,7 @@ int main()
 
     int n;
 
-    cout << "½Ğ¿é¤J¸ê®Æµ§¼Æ n: ";
+    cout << "è«‹è¼¸å…¥è³‡æ–™ç­†æ•¸ n: ";
     cin >> n;
 
     vector<int> bestData = generateBestData(n);
@@ -419,7 +419,7 @@ int main()
     cout << endl;
     cout << "======================================" << endl;
     cout << "Homework Sorting Project" << endl;
-    cout << "¸ê®Æµ§¼Æ N = " << n << endl;
+    cout << "è³‡æ–™ç­†æ•¸ N = " << n << endl;
     cout << "======================================" << endl;
     cout << endl;
 
