@@ -16,7 +16,7 @@ void MedianOfThree(T* a, const int left, const int right)
     if (a[right] < a[mid])
         swap(a[right], a[mid]);
 
-    // ±N median ©ñ¨ì right - 1 ªº¦ì¸m¡A§@¬° pivot
+    // å°‡ median æ”¾åˆ° right - 1 çš„ä½ç½®ï¼Œä½œç‚º pivot
     swap(a[mid], a[right - 1]);
 }
 
@@ -50,7 +50,7 @@ void QuickSort(T* a, const int left, const int right)
             break;
     }
 
-    // ±N pivot ©ñ¦^¥¿½T¦ì¸m
+    // å°‡ pivot æ”¾å›žæ­£ç¢ºä½ç½®
     swap(a[i], a[right - 1]);
 
     QuickSort(a, left, i - 1);
@@ -61,12 +61,12 @@ int main()
 {
     int n;
 
-    cout << "½Ð¿é¤J¸ê®Æµ§¼Æ: ";
+    cout << "è«‹è¼¸å…¥è³‡æ–™ç­†æ•¸: ";
     cin >> n;
 
     int* a = new int[n + 1];
 
-    cout << "½Ð¿é¤J " << n << " ­Ó¼Æ¦r: ";
+    cout << "è«‹è¼¸å…¥ " << n << " å€‹æ•¸å­—: ";
     for (int i = 1; i <= n; i++)
     {
         cin >> a[i];
@@ -74,7 +74,7 @@ int main()
 
     QuickSort(a, 1, n);
 
-    cout << "±Æ§Ç«áµ²ªG: ";
+    cout << "æŽ’åºå¾Œçµæžœ: ";
     for (int i = 1; i <= n; i++)
     {
         cout << a[i] << " ";
