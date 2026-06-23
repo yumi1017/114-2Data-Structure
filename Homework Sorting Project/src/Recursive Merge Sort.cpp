@@ -65,13 +65,13 @@ int main()
 {
     int n;
 
-    cout << "�п�J��Ƶ��� n: ";
+    cout << "½Ð¿é¤J¸ê®Æµ§¼Æ n: ";
     cin >> n;
 
     int* a = new int[n + 1];
     int* link = new int[n + 1];
 
-    cout << "�п�J " << n << " �ӼƦr: ";
+    cout << "½Ð¿é¤J " << n << " ­Ó¼Æ¦r: ";
     for (int i = 1; i <= n; i++)
     {
         cin >> a[i];
@@ -80,14 +80,14 @@ int main()
 
     int first = rMergeSort(a, link, 1, n);
 
-    cout << "�Ƨǫᵲ�G: ";
+    cout << "±Æ§Ç«áµ²ªG: ";
     for (int i = first; i != 0; i = link[i])
     {
         cout << a[i] << " ";
     }
     cout << endl;
 
-    cout << "�Ƨǫ᪺ link �}�C: " << endl;
+    cout << "±Æ§Ç«áªº link °}¦C: " << endl;
     for (int i = 1; i <= n; i++)
     {
         cout << "link[" << i << "] = " << link[i] << endl;
