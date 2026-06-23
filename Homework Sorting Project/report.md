@@ -480,6 +480,7 @@ int main()
 }
 ```
 
+## 測試與驗證
 <img width="1134" height="469" alt="image" src="https://github.com/user-attachments/assets/d61f8207-30c4-4365-8dc5-2517e1a0f4bf" />
 
 ## 結論
